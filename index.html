@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VRM Retro シリーズ ── VRM アバターをレトロに使う、ブラウザだけの無料ツール</title>
+<meta name="description" content="VRM アバターを、ドット絵のスプライト、モーション、レトロな VRM、ペーパークラフトにする 4 つの無料ツール。ブラウザだけで動き、ファイルはアップロードされません。">
+<meta property="og:title" content="VRM Retro シリーズ">
+<meta property="og:description" content="VRM アバターをレトロに使う、ブラウザだけの無料ツール 4 本。ファイルはアップロードされません。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://img.itch.zone/aW1nLzMyMTA4MDc5LnBuZw==/original/NmZkB9.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --bg: #14161f; --panel: #1d2030; --line: #2e3348; --ink: #eef0f6; --sub: #a9afc4;
+    --accent: #ffcc4d; --accent-ink: #1a1400; --link: #8fd3ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Hiragino Sans", "Noto Sans JP", "Yu Gothic", system-ui, sans-serif;
+    line-height: 1.7;
+  }
+  a { color: var(--link); }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 56px 0 28px; border-bottom: 1px solid var(--line); }
+  .badge {
+    display: inline-block; font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12px;
+    letter-spacing: .12em; color: var(--accent); border: 1px solid var(--accent); padding: 2px 8px;
+  }
+  h1 { font-size: clamp(28px, 5vw, 44px); line-height: 1.25; margin: 14px 0 10px; letter-spacing: .02em; }
+  .lead { font-size: 17px; color: var(--sub); margin: 0; max-width: 46em; }
+  .en { font-size: 14px; color: var(--sub); opacity: .85; }
+  .points { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; padding: 0; list-style: none; }
+  .points li { background: var(--panel); border: 1px solid var(--line); padding: 4px 12px; font-size: 14px; }
+  h2 { font-size: 20px; margin: 40px 0 14px; }
+  .flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; counter-reset: s; }
+  .flow div { background: var(--panel); border: 1px solid var(--line); padding: 12px 14px; font-size: 14px; position: relative; }
+  .flow b { display: block; color: var(--accent); font-size: 13px; }
+  .tools { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .tool { background: var(--panel); border: 1px solid var(--line); display: flex; flex-direction: column; }
+  .tool img { width: 100%; aspect-ratio: 630 / 500; object-fit: cover; display: block; image-rendering: pixelated; background: #000; }
+  .tool .body { padding: 16px 18px 18px; display: flex; flex-direction: column; flex: 1; }
+  .tool h3 { margin: 0 0 6px; font-size: 19px; letter-spacing: .02em; }
+  .tool p { margin: 0 0 8px; }
+  .tool ul { margin: 0 0 12px; padding-left: 1.2em; font-size: 14px; color: var(--sub); }
+  .btns { margin-top: auto; display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 8px 14px; text-decoration: none; font-weight: 700; font-size: 14px; border: 1px solid var(--accent); }
+  .btn.main { background: var(--accent); color: var(--accent-ink); }
+  .btn.sub { color: var(--accent); }
+  .note { background: var(--panel); border-left: 4px solid var(--accent); padding: 14px 18px; font-size: 15px; }
+  footer { margin: 48px 0 0; padding: 22px 0 40px; border-top: 1px solid var(--line); font-size: 13px; color: var(--sub); }
+  @media (max-width: 720px) {
+    .tools { grid-template-columns: 1fr; }
+    .flow { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <span class="badge">VRM RETRO SERIES</span>
+    <h1>VRM アバターを、レトロに使う。</h1>
+    <p class="lead">VRM アバター（VRoid など、VRM 0.x / 1.0）を、ドット絵のスプライト、動き、レトロな VRM、ペーパークラフトにする、4 つの無料ツールです。</p>
+    <p class="en">Four free browser tools that turn your VRM avatar into pixel sprites, motions, retro VRMs and papercraft.</p>
+    <ul class="points">
+      <li>ブラウザだけで動く / runs in your browser</li>
+      <li>ファイルはアップロードされない / nothing uploaded</li>
+      <li>インストール・登録なし / no install, no account</li>
+      <li>無料 / free</li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+  <h2>組み合わせて使う / How they fit together</h2>
+  <div class="flow">
+    <div><b>1. アバターを作る</b>絵から VRM、または VRM をレトロに<br><small>RETRO MAKER</small></div>
+    <div><b>2. 動きを作る</b>動画からモーション（.vrma）<br><small>Motion Studio</small></div>
+    <div><b>3. ゲームに使う</b>8 方向のドット絵スプライト<br><small>Retro Viewer</small></div>
+    <div><b>4. 机に飾る</b>印刷できるペーパークラフト<br><small>RETRO PAPERCRAFT</small></div>
+  </div>
+
+  <h2>ツール / Tools</h2>
+  <div class="tools">
+
+    <section class="tool">
+      <img src="https://img.itch.zone/aW1nLzMyMTA4MDc5LnBuZw==/original/NmZkB9.png" alt="VRM Retro Viewer の画面" loading="lazy">
+      <div class="body">
+        <h3>VRM Retro Viewer</h3>
+        <p>VRM を、8 方向のドット絵スプライトに。</p>
+        <ul>
+          <li>231 種類の CC0 モーション入り（歩く、走る、剣、魔法 など）</li>
+          <li>PNG と GIF（背景透過）、8 / 4 方向、32〜128 px</li>
+          <li>Unity、Godot、GameMaker、Aseprite などで使える普通の画像</li>
+          <li>Pyxel 3 用の 3D データも書き出せる</li>
+        </ul>
+        <p class="en">Turn any VRM into 8-direction pixel sprites. 231 motions included.</p>
+        <div class="btns">
+          <a class="btn main" href="https://haruka-apps-games.itch.io/vrm-retro-viewer">試す（itch.io）</a>
+          <a class="btn sub" href="https://github.com/harukaappscreate/vrm-retro-viewer">ソース（GitHub）</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tool">
+      <img src="https://img.itch.zone/aW1nLzMyMjczODg2LnBuZw==/original/NCwGKD.png" alt="VRM Motion Studio の画面" loading="lazy">
+      <div class="body">
+        <h3>VRM Motion Studio</h3>
+        <p>動画（MP4）から、VRM のモーション（.vrma）を作る。</p>
+        <ul>
+          <li>動画の人の動きを、その場で VRM に当てて確かめられる</li>
+          <li>.vrma（最大 30 秒）、GIF、PNG を書き出し</li>
+          <li>.vrma は UniVRM、Blender、three-vrm、VRM Retro Viewer で使える</li>
+          <li>サンプル動画 3 本とサンプルのアバター入り</li>
+        </ul>
+        <p class="en">Turn MP4 videos into .vrma animations and preview them on your VRM.</p>
+        <div class="btns">
+          <a class="btn main" href="https://haruka-apps-games.itch.io/vrm-motion-studio">試す（itch.io）</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tool">
+      <img src="https://img.itch.zone/aW1nLzMyMzc3Nzc5LnBuZw==/original/BMLqvI.png" alt="VRM RETRO MAKER の画面" loading="lazy">
+      <div class="body">
+        <h3>VRM RETRO MAKER</h3>
+        <p>VRM をレトロな VRM に。キャラクターの絵からボクセルの VRM に。</p>
+        <ul>
+          <li>テクスチャを 16〜256 色の 1 つのパレットにまとめる。ボーンや表情はそのまま</li>
+          <li>正面の絵 1 枚、または四面図から、ボクセルのアバターを作る</li>
+          <li>VRM 1.0 / 0.x で書き出し</li>
+        </ul>
+        <p class="en">Turn a VRM into a retro VRM, or a character sheet into a voxel VRM.</p>
+        <div class="btns">
+          <a class="btn main" href="https://haruka-apps-games.itch.io/vrm-retro-maker">試す（itch.io）</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tool">
+      <img src="https://img.itch.zone/aW1nLzMyNDEzNjQ3LnBuZw==/original/5cruKx.png" alt="VRM RETRO PAPERCRAFT の画面" loading="lazy">
+      <div class="body">
+        <h3>VRM RETRO PAPERCRAFT</h3>
+        <p>VRM を、印刷できるペーパークラフトに。</p>
+        <ul>
+          <li>A4 の PDF。高さ 150〜260 mm</li>
+          <li>アバターのテクスチャで色付け。フルカラーかレトロ（24 色）</li>
+          <li>番号付きののりしろ、山折り・谷折りの線</li>
+        </ul>
+        <p class="en">Turn your VRM avatar into a printable A4 papercraft.</p>
+        <div class="btns">
+          <a class="btn main" href="https://haruka-apps-games.itch.io/vrm-retro-papercraft">試す（itch.io）</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <h2>安心して使うために / Privacy &amp; rights</h2>
+  <div class="note">
+    <p>どのツールも、読み込んだファイルはお使いの端末のブラウザの中だけで処理します。サーバーには送りません。</p>
+    <p>アバターや動画は、自分で作ったもの、または使ってよいものだけを使ってください。VRM に書かれたライセンス（利用・改変・再配布など）も守ってください。ツールによっては、その内容を画面に表示します。</p>
+    <p class="en">Your files never leave your device. Use only avatars and videos you made or are allowed to use.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>作者：haruka_apps ── <a href="https://haruka-apps-games.itch.io/">itch.io</a> ・ <a href="https://github.com/harukaappscreate">GitHub</a> ・ <a href="https://qiita.com/haruka_apps">Qiita</a></p>
+    <p>どのツールも <a href="https://github.com/kitao/pyxel">Pyxel 3</a>（Takashi Kitao, MIT License）で作り、Pyodide の上で動きます。サンプルのアバター：千駄ヶ谷 渋（CC0、VRoid のサンプル）。</p>
+  </div>
+</footer>
+</body>
+</html>
