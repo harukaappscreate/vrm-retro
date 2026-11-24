@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VRM Retro シリーズ ── VRM アバターをレトロに使う、ブラウザだけの無料ツール</title>
-<meta name="description" content="VRM アバターを、ドット絵のスプライト、モーション、レトロな VRM、ペーパークラフトにする 4 つの無料ツール。ブラウザだけで動き、ファイルはアップロードされません。">
+<meta name="description" content="VRM アバターを、ドット絵のスプライト、モーション、レトロな VRM、ペーパークラフト、ガウシアンスプラットにする 5 つの無料ツール。ブラウザだけで動き、ファイルはアップロードされません。">
 <meta property="og:title" content="VRM Retro シリーズ">
-<meta property="og:description" content="VRM アバターをレトロに使う、ブラウザだけの無料ツール 4 本。ファイルはアップロードされません。">
+<meta property="og:description" content="VRM アバターをレトロに使う、ブラウザだけの無料ツール 5 本。ファイルはアップロードされません。">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://img.itch.zone/aW1nLzMyMTA4MDc5LnBuZw==/original/NmZkB9.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -34,7 +34,7 @@
   .points { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; padding: 0; list-style: none; }
   .points li { background: var(--panel); border: 1px solid var(--line); padding: 4px 12px; font-size: 14px; }
   h2 { font-size: 20px; margin: 40px 0 14px; }
-  .flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; counter-reset: s; }
+  .flow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; counter-reset: s; }
   .flow div { background: var(--panel); border: 1px solid var(--line); padding: 12px 14px; font-size: 14px; position: relative; }
   .flow b { display: block; color: var(--accent); font-size: 13px; }
   .tools { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
@@ -61,8 +61,8 @@
   <div class="wrap">
     <span class="badge">VRM RETRO SERIES</span>
     <h1>VRM アバターを、レトロに使う。</h1>
-    <p class="lead">VRM アバター（VRoid など、VRM 0.x / 1.0）を、ドット絵のスプライト、動き、レトロな VRM、ペーパークラフトにする、4 つの無料ツールです。</p>
-    <p class="en">Four free browser tools that turn your VRM avatar into pixel sprites, motions, retro VRMs and papercraft.</p>
+    <p class="lead">VRM アバター（VRoid など、VRM 0.x / 1.0）を、ドット絵のスプライト、動き、レトロな VRM、ペーパークラフト、ガウシアンスプラットにする、5 つの無料ツールです。</p>
+    <p class="en">Five free browser tools that turn your VRM avatar into pixel sprites, motions, retro VRMs, papercraft and Gaussian splats.</p>
     <ul class="points">
       <li>ブラウザだけで動く / runs in your browser</li>
       <li>ファイルはアップロードされない / nothing uploaded</li>
@@ -79,6 +79,7 @@
     <div><b>2. 動きを作る</b>動画からモーション（.vrma）<br><small>Motion Studio</small></div>
     <div><b>3. ゲームに使う</b>8 方向のドット絵スプライト<br><small>Retro Viewer</small></div>
     <div><b>4. 机に飾る</b>印刷できるペーパークラフト<br><small>RETRO PAPERCRAFT</small></div>
+    <div><b>5. 粒で見せる</b>動くガウシアンスプラット<br><small>RETRO 4DGS STUDIO</small></div>
   </div>
 
   <h2>ツール / Tools</h2>
@@ -154,6 +155,24 @@
         <div class="btns">
           <a class="btn main" href="https://haruka-apps-games.itch.io/vrm-retro-papercraft">試す（itch.io）</a>
           <a class="btn sub" href="https://github.com/harukaappscreate/vrm-retro-papercraft">ソース（GitHub）</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tool">
+      <img src="https://raw.githubusercontent.com/harukaappscreate/vrm-retro-4dgs/main/docs/cover_630x500.png" alt="VRM RETRO 4DGS STUDIO の画面" loading="lazy">
+      <div class="body">
+        <h3>VRM RETRO 4DGS STUDIO</h3>
+        <p>VRM を、モーション付きで動くガウシアンスプラット（粒）に。</p>
+        <ul>
+          <li>Pyxel のレトロ表示と WebGL2 のなめらかな表示を並べて見る</li>
+          <li>231 種類の CC0 モーション、まばたき・口パク・表情</li>
+          <li>1 枚の HTML、連番 .splat の ZIP、.SPLAT / .PLY で書き出し</li>
+        </ul>
+        <p class="en">Turn your VRM into animated Gaussian splats, with blink and lip-sync.</p>
+        <div class="btns">
+          <a class="btn main" href="https://haruka-apps-games.itch.io/vrm-retro-4dgs-studio">試す（itch.io）</a>
+          <a class="btn sub" href="https://github.com/harukaappscreate/vrm-retro-4dgs">ソース（GitHub）</a>
         </div>
       </div>
     </section>
