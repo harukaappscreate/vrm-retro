@@ -12,8 +12,14 @@ VRM アバターを、ドット絵のスプライト、モーション、レト�
 | VRM RETRO PAPERCRAFT | VRM を印刷できるペーパークラフトに | https://haruka-apps-games.itch.io/vrm-retro-papercraft |
 | VRM RETRO 4DGS STUDIO | VRM を動くガウシアンスプラットに | https://haruka-apps-games.itch.io/vrm-retro-4dgs-studio |
 
+関連ツール（シリーズの外。Pyxel ではなく HTML5 / WebGL2）：
+
+| ツール | できること | 試す |
+|---|---|---|
+| Video → VRM Studio | グリーンバックの 360° 回転動画から VRM アバターを作る | https://haruka-apps-games.itch.io/video-vrm-studio |
+
 どのツールもブラウザだけで動き、ファイルはアップロードされません。
 
 ---
 
-Landing page for five free browser tools that turn your VRM avatar into pixel sprites, motions, retro VRMs, papercraft and Gaussian splats.
+Landing page for five free browser tools that turn your VRM avatar into pixel sprites, motions, retro VRMs, papercraft and Gaussian splats. Related: Video → VRM Studio (turntable video → VRM avatar).
