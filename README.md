@@ -1,6 +1,6 @@
 # VRM Retro シリーズ
 
-VRM アバターを、ドット絵のスプライト、モーション、レトロな VRM、ペーパークラフト、ガウシアンスプラットにする、5 つの無料ツール（と関連ツール）の入口のページです。
+VRM アバターを、ドット絵のスプライト、モーション、レトロな VRM、ペーパークラフト、ガウシアンスプラットにする、6 つの無料ツールの入口のページです（Video → VRM Studio は関連ツールとして下に）。
 
 ページ：https://harukaappscreate.github.io/vrm-retro/
 
@@ -22,4 +22,4 @@ VRM アバターを、ドット絵のスプライト、モーション、レト�
 
 ---
 
-Landing page for five free browser tools that turn your VRM avatar into pixel sprites, motions, retro VRMs, papercraft and Gaussian splats. Related: Video → VRM Studio (turntable video → VRM avatar).
+Landing page for six free browser tools that turn your VRM avatar into pixel sprites, motions, retro VRMs, papercraft and Gaussian splats, or make one from a turntable video (Video → VRM Studio, listed as a related tool).
