@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VRM Retro シリーズ ── VRM アバターをレトロに使う、ブラウザだけの無料ツール</title>
-<meta name="description" content="VRM アバターを、ドット絵のスプライト、モーション、レトロな VRM、ペーパークラフト、ガウシアンスプラットにする。回転動画から VRM を作る。6 つの無料ツール。ブラウザだけで動き、ファイルはアップロードされません。">
+<meta name="description" content="VRM アバターを、ドット絵のスプライト、モーション、レトロな VRM、ペーパークラフト、ガウシアンスプラットにする。回転動画から VRM を作る。デスクトップを歩かせる。7 つの無料ツール。ファイルはアップロードされません。">
 <meta property="og:title" content="VRM Retro シリーズ">
-<meta property="og:description" content="VRM アバターをレトロに使う、ブラウザだけの無料ツール 6 本。ファイルはアップロードされません。">
+<meta property="og:description" content="VRM アバターをレトロに使う、無料ツール 7 本。ファイルはアップロードされません。">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://img.itch.zone/aW1nLzMyMTA4MDc5LnBuZw==/original/NmZkB9.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -34,7 +34,7 @@
   .points { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; padding: 0; list-style: none; }
   .points li { background: var(--panel); border: 1px solid var(--line); padding: 4px 12px; font-size: 14px; }
   h2 { font-size: 20px; margin: 40px 0 14px; }
-  .flow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; counter-reset: s; }
+  .flow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; counter-reset: s; }
   .flow div { background: var(--panel); border: 1px solid var(--line); padding: 12px 14px; font-size: 14px; position: relative; }
   .flow b { display: block; color: var(--accent); font-size: 13px; }
   .tools { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
@@ -61,12 +61,12 @@
   <div class="wrap">
     <span class="badge">VRM RETRO SERIES</span>
     <h1>VRM アバターを、レトロに使う。</h1>
-    <p class="lead">VRM アバター（VRoid など、VRM 0.x / 1.0）を、ドット絵のスプライト、動き、レトロな VRM、ペーパークラフト、ガウシアンスプラットにする。回転動画から VRM アバターを作る。ブラウザだけで動く、6 つの無料ツールです。</p>
-    <p class="en">Six free browser tools: turn your VRM avatar into pixel sprites, motions, retro VRMs, papercraft and Gaussian splats, or make one from a turntable video.</p>
+    <p class="lead">VRM アバター（VRoid など、VRM 0.x / 1.0）を、ドット絵のスプライト、動き、レトロな VRM、ペーパークラフト、ガウシアンスプラットにする。回転動画から VRM アバターを作る。デスクトップを歩かせる。7 つの無料ツールです（6 つはブラウザだけで動き、1 つは Windows 用のアプリ）。</p>
+    <p class="en">Seven free tools: turn your VRM avatar into pixel sprites, motions, retro VRMs, papercraft and Gaussian splats, make one from a turntable video, or let it walk on your desktop (six run in the browser, one is a Windows app).</p>
     <ul class="points">
-      <li>ブラウザだけで動く / runs in your browser</li>
+      <li>ほとんどがブラウザだけで動く / mostly runs in your browser</li>
       <li>ファイルはアップロードされない / nothing uploaded</li>
-      <li>インストール・登録なし / no install, no account</li>
+      <li>登録なし / no account</li>
       <li>無料 / free</li>
     </ul>
   </div>
@@ -80,6 +80,7 @@
     <div><b>3. ゲームに使う</b>8 方向のドット絵スプライト<br><small>Retro Viewer</small></div>
     <div><b>4. 机に飾る</b>印刷できるペーパークラフト<br><small>RETRO PAPERCRAFT</small></div>
     <div><b>5. 粒で見せる</b>動くガウシアンスプラット<br><small>RETRO 4DGS STUDIO</small></div>
+    <div><b>6. デスクトップで連れ歩く</b>画面の上を歩くマスコット<br><small>RETRO WALK</small></div>
   </div>
 
   <h2>ツール / Tools</h2>
@@ -177,6 +178,24 @@
       </div>
     </section>
 
+    <section class="tool">
+      <img src="https://raw.githubusercontent.com/harukaappscreate/vrm-retro-walk/main/docs/cover_630x500.png" alt="VRM RETRO WALK の画面" loading="lazy">
+      <div class="body">
+        <h3>VRM RETRO WALK</h3>
+        <p>自分の VRM がドット絵になって、デスクトップの上を歩く。</p>
+        <ul>
+          <li>歩く・座る・おひるね・なでる・つまみ上げる</li>
+          <li>ほかのウィンドウの上に乗って腰かける</li>
+          <li>Windows 用のアプリ（インストールして使う）</li>
+        </ul>
+        <p class="en">A Windows desktop mascot: your VRM walks around your desktop as pixel art.</p>
+        <div class="btns">
+          <a class="btn main" href="https://haruka-apps-games.itch.io/vrm-retro-walk">ダウンロード（itch.io）</a>
+          <a class="btn sub" href="https://github.com/harukaappscreate/vrm-retro-walk">ソース（GitHub）</a>
+        </div>
+      </div>
+    </section>
+
   </div>
 
   <h2>関連ツール / Related</h2>
@@ -212,7 +231,7 @@
 <footer>
   <div class="wrap">
     <p>作者：haruka_apps ── <a href="https://haruka-apps-games.itch.io/">itch.io</a> ・ <a href="https://github.com/harukaappscreate">GitHub</a> ・ <a href="https://qiita.com/haruka_apps">Qiita</a></p>
-    <p>シリーズのツールは <a href="https://github.com/kitao/pyxel">Pyxel 3</a>（Takashi Kitao, MIT License）で作り、Pyodide の上で動きます。サンプルのアバター：千駄ヶ谷 渋（CC0、VRoid のサンプル）。</p>
+    <p>シリーズのツールは <a href="https://github.com/kitao/pyxel">Pyxel 3</a>（Takashi Kitao, MIT License）で作りました。ブラウザ版は Pyodide の上で動きます。サンプルのアバター：千駄ヶ谷 渋（CC0、VRoid のサンプル）。</p>
   </div>
 </footer>
 </body>
